@@ -123,7 +123,7 @@ module SagePay
             params["Status"],
             params["TxAuthNo"],
             signature_verification_details.vendor,
-            params["AVSCV2"],
+            CGI::unescape(params["AVSCV2"]),
             signature_verification_details.security_key,
             params["AddressResult"],
             params["PostCodeResult"],

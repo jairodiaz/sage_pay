@@ -20,7 +20,7 @@ module Factories
 
   def registration_factory(overrides = {})
     defaults = {
-      :mode             => :test,
+      :mode             => :simulator,
       :tx_type          => :payment,
       :vendor           => "BobTheBuilder",
       :vendor_tx_code   => "random-transaction-id",
